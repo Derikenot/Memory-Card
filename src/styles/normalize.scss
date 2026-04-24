@@ -1,0 +1,70 @@
+/* -----------------------------------------
+   Modern Reset + Quality of Life Fixes
+----------------------------------------- */
+
+/* Remove all default margins */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Improve text rendering */
+html {
+  -webkit-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
+}
+
+/* Remove default body margin */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+/* Images: prevent stretching */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* Remove built-in form styling */
+input, button, textarea, select {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+/* Buttons clickable by default */
+button {
+  cursor: pointer;
+}
+
+/* Remove list dots */
+ul, ol {
+  list-style: none;
+}
+
+/* Links inherit color and no underline */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Smoothly align headings sizes */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: inherit;
+  line-height: 1.2;
+}
+
+/* Disable animations for reduced motion users */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

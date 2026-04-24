@@ -1,0 +1,10 @@
+.cards{
+  &List{
+    width: 100%;
+    max-width: 500px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    perspective: 1000px;
+  }
+}
